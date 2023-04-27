@@ -1,0 +1,8 @@
+D:\C#\IMC\obj\Debug\IMC.csproj.AssemblyReference.cache
+D:\C#\IMC\obj\Debug\IMC.csproj.SuggestedBindingRedirects.cache
+D:\C#\IMC\obj\Debug\IMC.csproj.CoreCompileInputs.cache
+D:\C#\IMC\bin\Debug\IMC.exe.config
+D:\C#\IMC\bin\Debug\IMC.exe
+D:\C#\IMC\bin\Debug\IMC.pdb
+D:\C#\IMC\obj\Debug\IMC.exe
+D:\C#\IMC\obj\Debug\IMC.pdb
