@@ -16,19 +16,19 @@ namespace IMC
 
             Console.WriteLine("*****Calculadora de IMC*****");
             Console.WriteLine("****************************");
-            Console.WriteLine("Pressione qualquer botão para dar inicio ao programa.....");
+            Console.Write("Pressione qualquer botão para dar inicio ao programa.....");
             Console.ReadLine();
             do{
                 Console.Write("Insira o nome do cliente: ");
                 nome=Console.ReadLine();
                 Console.Write($"Qual o sexo do cliente {nome}:(F ou M) ");
-                while (!char.TryParse(Console.ReadLine().ToUpper(), out sexo) || sexo != 'F' && sexo != 'M') ;
+                while (!char.TryParse(Console.ReadLine().ToUpper(), out sexo) || sexo != 'F' && sexo != 'M') 
                     Console.Write("Numero invalido! por favor inserir F para Feminino e M para Masculino");
                 Console.Write($"Insira o a altura do cliente {nome}: ");
-                while (!float.TryParse(Console.ReadLine(), out altura) || altura > 1 && altura < 2.5);
+                while (!float.TryParse(Console.ReadLine(), out altura) || altura < 1 || altura > 2.5)
                     Console.Write("Numero invalido! por favor inserir um numero entre 1 metro ate 2,5 metro...");
                 Console.Write($"Insira o peso do cliente {nome}: ");
-                while (!float.TryParse(Console.ReadLine(), out peso) || peso > 30 && peso < 200);
+                while (!float.TryParse(Console.ReadLine(), out peso) || peso < 30 || peso > 200)
                     Console.Write("Numero invalido! Por favor inserir um numero entre 30kg ate 200kg...");
                 imc = peso / (altura * altura);
 
